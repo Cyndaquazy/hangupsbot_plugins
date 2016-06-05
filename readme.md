@@ -1,6 +1,6 @@
 # Hangupsbot Plugins #
 
-This repository contains the various HangupsBot plugins that I've written.
+This repository contains the various [HangupsBot](https://github.com/hangoutsbot/hangoutsbot) plugins that I've written.
 
 ### Plugins ###
 
@@ -17,4 +17,10 @@ be in 24-hour format without the `AM/PM`. The plugin also accepts the ISO 8601-c
 `YYYY-MM-DD HH:MM:SS+HHMM` where all parts are required.
 
 This plugin has one **configuration entry**: `timeme.default_tz`, which is a list of the `[hour_offset, minute_offset]`
-of the default timezone, with initial values `[0, 0]`, corresponding to the UTC/GMT offset &pm;0000.
+of the default timezone. The initial values are `[0, 0]`, corresponding to the UTC/GMT offset, &pm;0000.
+
+-----
+
+### Installation ###
+
+To install one of these plugins into your bot, copy the base Python file and any supporting files into the `plugins` directory of your bot's installation (usually `hangupsbot/plugins`), maintaining hierarchies, and add the plugin to the list of active plugins in the bot's configuration.
